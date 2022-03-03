@@ -1,0 +1,60 @@
+.herbert{
+   
+    &__background-img{
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 965px;
+        background-size: cover;
+        background-image: url(../../img/herbert_bg.png);
+        background-position: 0% 0%;
+        position: relative;
+        @include respond(tab-land-6){
+            background-position: 50% 0%;
+        }
+        @include respond(phone){
+            min-height: 626px;
+            // background-position: 50% 50%;
+        }
+
+    }
+    &__herbert-container{
+        width: 100%;
+        max-width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        // border: 1px solid red;
+        text-align: center;
+        padding-top: 331px;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include respond(phone){
+            padding-top: 120px;
+        }
+        // @include respond(zero-size){
+           
+        // }
+    }
+    &__herbert-p{
+        margin-bottom: 174px;
+        color: #fff;
+        font-size: 36.46px;
+        line-height: 43.75px;
+        font-family: 'Nunito', sans-serif;
+        @include respond(phone){
+            font-size: 30.46px;
+            // background-color: red;
+        }
+        @include respond(zero-size){
+            font-size: 26px;
+            margin-bottom: 95px;
+            // background-color: palegoldenrod;
+        }
+        
+    }
+    &__herbert-h3{
+        color: #fff;
+        font-size: 58px;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+}
