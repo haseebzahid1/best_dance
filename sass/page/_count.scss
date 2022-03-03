@@ -1,0 +1,129 @@
+.count{
+    padding-top: 204px;
+    padding-bottom: 262px;
+    background-color: #F64B3C;
+    @include respond (tab-port){
+        padding-top: 160px;
+        padding-bottom: 200px;
+        // background-color: pink;
+    }
+    @include respond(phone-1){
+        padding-top: 130px;
+        padding-bottom: 150px;
+    }
+    @include respond(zero-size){
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+    &__count-statistics{
+        width: 100%;
+        max-width: 740px;
+        // border: 1px solid red;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+     
+    }
+    &__count-h1{
+        font-size: 66.26px;
+        margin-bottom: 53px;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        @include respond(zero-size){
+            font-size: 45px;
+        }
+    }
+    &__count-p{
+        font-size: 24.68px;
+        color: #fff;
+        line-height: 29.61px;
+        margin-bottom: 189px;
+        @include respond(phone-1){
+            margin-bottom: 100px;
+            // background-color: gray;
+        }
+        @include respond(zero-size){
+            margin-bottom: 36px;
+            font-size: 20px;
+        }
+    }
+    &__count-flex{
+        // border: 1px solid red;
+        // margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1225px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        @include respond(phone){
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        // @include respond(zero-size){
+        //     margin-top: 30px;
+        // }
+    }
+    &__count-down,&__count-text-span{
+        font-size: 101px;
+        color: #fff;
+        font-family: 'Oswald', sans-serif;
+        @include respond(tab-port-1){
+            font-size: 80px;
+            // background-color: pink;
+        }
+        @include respond(phone-2){
+            font-size: 65px;
+            // background-color: goldenrod;
+        }
+    }
+    &__count-p2{
+        margin-top: 20px;
+        font-size: 33.33px;
+        color: #fff;
+        @include respond(tab-port-1){
+            font-size: 27px;
+        }
+        @include respond(phone-2){
+            font-size: 20px;
+        }
+       
+        
+    }
+    &__count-box{
+        width: 100%;
+        // max-width: 310px;
+        // height: 310px;
+        // border: 5px solid white;
+        // border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       @include respond(tab-land){
+            // max-width: 280px;
+            height: 280px;
+        }
+        @include respond(tab-port-1){
+            // max-width: 220px;
+            height: 220px;
+        }
+        @include respond(phone-2){
+            // max-width:160px;
+            height: 160px;
+        }
+        @include respond(phone){
+            margin-top: 20px;
+        }
+        @include respond(zero-size){
+            margin-top: 0px;
+        }
+    }
+}
