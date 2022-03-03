@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-family: 'Archivo', sans-serif; }
+
+.img-fluid {
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+p, h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0; }
+
+.full-container {
+  max-width: 1220px;
+  width: 100%;
+  border: 1px solid red; }
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+h1 {
+  color: red; }
+
+.footer {
+  padding-top: 128px;
+  padding-bottom: 92px;
+  background-color: #222222; }
+  @media (max-width: 970px) {
+    .footer {
+      padding-top: 123px;
+      padding-bottom: 184px; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding-top: 70px;
+      padding-bottom: 80px; } }
+  @media (max-width: 480px) {
+    .footer {
+      padding-top: 40px;
+      padding-bottom: 50px; } }
+  .footer__footer-container {
+    width: 100%;
+    max-width: 1241.29px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+  .footer__footer-d-flex {
+    display: flex;
+    justify-content: space-between; }
+    @media (max-width: 970px) {
+      .footer__footer-d-flex {
+        flex-wrap: wrap; } }
+  .footer__col-1 {
+    width: 100%;
+    max-width: 50%;
+    padding-right: 160px; }
+    @media (max-width: 1070px) {
+      .footer__col-1 {
+        max-width: 40%;
+        padding-right: 30px; } }
+    @media (max-width: 970px) {
+      .footer__col-1 {
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: center; } }
+    @media (max-width: 480px) {
+      .footer__col-1 {
+        padding-right: 5px;
+        padding-left: 5px; } }
+  .footer__col-2 {
+    width: 100%;
+    max-width: 16.666666%; }
+    @media (max-width: 1070px) {
+      .footer__col-2 {
+        padding-right: 0px; } }
+    @media (max-width: 970px) {
+      .footer__col-2 {
+        max-width: 33.333333%;
+        padding-right: 0px; } }
+    @media (max-width: 767px) {
+      .footer__col-2 {
+        max-width: 100%; }
+        .footer__col-2:not(:first-child) {
+          margin-top: 12px; } }
+  .footer__pl-5 {
+    padding-left: 27px !important; }
+    @media (max-width: 970px) {
+      .footer__pl-5 {
+        padding-left: 0px !important; } }
+  .footer__footer-h1 {
+    font-size: 31.47px;
+    color: #fff;
+    margin-bottom: 23.6px; }
+    @media (max-width: 967px) {
+      .footer__footer-h1 {
+        font-size: 28px;
+        text-align: center; } }
+    @media (max-width: 767px) {
+      .footer__footer-h1 {
+        margin-bottom: 8px; } }
+  .footer__footer-p {
+    font-size: 23.6px;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    line-height: 28.32px; }
+    @media (max-width: 967px) {
+      .footer__footer-p {
+        font-size: 20px; } }
+  .footer__footer-ul {
+    margin: 0;
+    padding: 0; }
+  .footer__footer-li {
+    line-height: 41.59px; }
+    @media (max-width: 767px) {
+      .footer__footer-li:last-child {
+        margin-bottom: 8px; } }
+    @media (max-width: 967px) {
+      .footer__footer-li {
+        text-align: center; } }
+  .footer__footer-a {
+    font-size: 17.6px;
+    font-family: 'Nunito', sans-serif;
+    color: #fff; }
+    .footer__footer-a:hover {
+      transition: all 0.5s ease;
+      color: #c9c8c8; }
+  .footer__social-d-flex {
+    margin-top: 38px;
+    display: flex; }
+    @media (max-width: 970px) {
+      .footer__social-d-flex {
+        justify-content: center;
+        margin-bottom: 2rem; } }
+  .footer__social-container {
+    border-radius: 50px;
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 15px; }
+    .footer__social-container:hover {
+      transition: all 0.5s ease-in-out;
+      background-color: #e6e4e4; }
+    .footer__social-container a {
+      text-align: center;
+      font-size: 19px;
+      color: #222222;
+      display: block; }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Best Dance</title>
+</head>
+<body>
+    
+    <footer class="footer" id="contact">
+        <div class="footer__footer-container">
+            <div class="footer__footer-inner">
+                <div class="footer__footer-d-flex">
+                    <div class="footer__col-1">
+                        <h1 class="footer__footer-h1">Title Here</h1>
+                        <p class="footer__footer-p">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim. 
+                        </p>
+                        <div class="footer__social-d-flex">
+                            <div class="footer__social-container">
+                                <a href="#.">
+                                 <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="footer__social-container">
+                                <a href="#.">
+                                 <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="footer__social-container">
+                                <a href="#.">
+                                 <i class="fa fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="footer__social-container">
+                                <a href="#.">
+                                 <i class="fa fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__col-2 ">
+                     <h1 class="footer__footer-h1">About</h1>
+                     <ul class="footer__footer-ul">
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">History</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Our Team</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Brand Guidelines</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Terms & Condition</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Privacy Policy</a>
+                         </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-2 footer__pl-5">
+                     <h1 class="footer__footer-h1">Services</h1>
+                     <ul class="footer__footer-ul ">
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">How to Order</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Our Product</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Order Status</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Promo</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Payment Method</a>
+                         </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col-2 footer__pl-5">
+                     <h1 class="footer__footer-h1">Other</h1>
+                     <ul class="footer__footer-ul ">
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Contact Us</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Help</a>
+                         </li>
+                         <li class="footer__footer-li">
+                             <a href="#" class="footer__footer-a">Privacy</a>
+                         </li>
+                     </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+   <!-- counter -->
+   <script>
+     $(window).scroll(function () {
+    if ($(this).scrollTop() >= 500) {
+        $(".back-to-top").fadeIn(200);
+    } else {
+        $(".back-to-top").fadeOut(200);
+    } 
+ })
+ </script>
+   <script>
+   
+     // Init Scrollspy
+     $('body').scrollspy({
+         target: '#main-nav'
+     });
+ 
+     // Smooth Scrolling
+     $("#main-nav a").on('click', function(event) {
+         if (this.hash !== "") {
+             event.preventDefault();
+ 
+             const hash = this.hash;
+ 
+             $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+             }, 800, function() {
+ 
+                 window.location.hash = hash;
+             });
+         }
+     });
+ </script>
+    <script>
+     $(document).ready(function(){
+         $(".counter").counterUp({
+             delay:10,
+             time:1200,
+           });
+         });
+ </script>
+ 
+ <script type="text/javascript">
+     window.addEventListener("scroll", function(){
+         var nav = document.querySelector("nav");
+         nav.classList.toggle("sticky", window.scrollY > 0);
+     })
+ </script> 
+</body>
+</html>
