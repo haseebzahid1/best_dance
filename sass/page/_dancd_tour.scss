@@ -1,16 +1,17 @@
-.price{
-    background-color:#303030;
+.tour{
+    background-color: #E8631C;
     
     &__main-container{
         width: 100%;
-        min-height:964px;
-        padding-bottom: 100px;
+        min-height:962px;
+        padding-bottom: 98px;
         @include respond(zero-size){
             padding-bottom: 64px;
         }
     }
+   
 
-   &__price-h1{
+   &__tour-h1{
         padding-top: 108px;
         font-size: 75px;
         color:#fff ;   
@@ -21,12 +22,14 @@
          font-size: 55px;
          line-height: 53px;
          margin-bottom: 0;
-    }
+    } 
     @include respond(zero-size){
         padding-top: 54px;
+        font-size: 50px;
     }
+   
    }
-   &__price-p{
+   &__tour-p{
         font-size: 29.72px;
         font-weight: 400;
         color:#fff ;  
@@ -50,7 +53,7 @@
         padding-top: 26px;
     }
 }
-    &__price-container{
+    &__tour-container{
         margin-top: 85px;
         padding-left: 15px;
         padding-right: 15px;
@@ -58,7 +61,7 @@
            margin-top: 0px;
        }
    }
-    &__price-flex{
+    &__tour-flex{
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -70,62 +73,75 @@
             justify-content: center;
         }
    }
-    &__price-col-1{
-        width: 100%;
-        max-width: 375px;
-        padding: 62px 26px 28px 26px;
+    &__tour-col-1{
+        // width: 100%;
+        width: 372px;
+        // padding: 0px 0px 0px 0px;
         text-align: center;
-        background-color: #E8631C;
+        
+        background-color: #303030;
         box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.2%);
-        border-radius: 10px;
-         @include respond(tab-port){
-             padding-left: 16px;
-             padding-right: 16px;
-         }
-       
+        border-radius: 3px;
+      
+      
         @include respond(phone){
-            max-width: 80%;
+            // max-width: 80%;
             &:not(:first-child){
                 margin-top: 20px;
             }
         }
    }
-   &__price-mlr{
-    margin-left: 10px;
-    margin-right: 10px;
+   &__tour-mlr{
+    margin-left: 12px;
+    margin-right: 12px;
+    @include respond(phone){
+        margin-left: 0;
+        margin-right: 0;
+    }
    }
-   &__price-img{
-    width: 112px;
-    height: 132px;
+   &__tour-img{
+    width: 100%;
+    // max-width: 322px;
+    height: 324px;
+    object-fit: cover;
+    // background-size: cover;
+    // background-position: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
-
-    &__price-h3{
+&__tour-content{
+    @include respond(phone-2){
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+    &__tour-h3{
         font-size: 33.35px;
         color:#FFF ;   
         font-weight: 400;
-        margin-top: 60px;
-        margin-bottom: 35px;
+        margin-top: 36px;
+        margin-bottom: 18px;
         font-family: 'Oswald', sans-serif;
         font-weight: 600;
         @include respond(phone){
-            margin-top: 40px;
+            margin-top: 26px;
         }
     }
    
-    &__price-p2{
-        margin-top: 9.6px;
-        margin-bottom: 54px;
+    &__tour-p2{
+        // margin-top: 9.6px;
+        margin-bottom: 38px;
         font-size: 20px;
         color:#FFF ;   
         @include respond(phone-2){
             font-size: 18px;
         }
         @include respond(zero-size){
-            margin-bottom: 40px;
+            margin-bottom: 26px;
         }
     }
   
-    &__price-btn{
+    &__tour-btn{
        width: 100%;
        max-width: 324px;
        background-color: #303030; 
