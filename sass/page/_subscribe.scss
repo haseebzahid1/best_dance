@@ -130,7 +130,7 @@
         background-repeat: no-repeat;
         z-index: 2;
         display: none;
-        @include respond(tab-land-1){
+        @include respond(tab-land-2){
             left: -10%;
             display: block;
            }
@@ -159,7 +159,7 @@
         z-index: 1;
         // opacity: 9;
        display: none;
-       @include respond(tab-land-1){
+       @include respond(tab-land-2){
         right: -44%;
         display: block;
        }

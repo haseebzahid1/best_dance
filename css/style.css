@@ -207,11 +207,15 @@ p, h1, h2, h3, h4 {
         display: none; } }
 
 .tour {
-  background-color: #E8631C; }
+  background-color: #E8631C;
+  position: relative;
+  overflow: hidden; }
   .tour__main-container {
     width: 100%;
     min-height: 962px;
-    padding-bottom: 98px; }
+    padding-bottom: 98px;
+    position: relative;
+    z-index: 4; }
     @media (max-width: 480px) {
       .tour__main-container {
         padding-bottom: 64px; } }
@@ -340,6 +344,27 @@ p, h1, h2, h3, h4 {
         padding-top: 10px; } }
     .tour__tour-btn:hover {
       background-color: #494848; }
+  .tour__tour_img-top_dots {
+    position: absolute;
+    background-image: url(../../img/dance_tour_bg_dots.png);
+    top: -5%;
+    left: -11%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: none; }
+    @media (max-width: 1444px) {
+      .tour__tour_img-top_dots {
+        display: block; } }
+    @media (max-width: 970px) {
+      .tour__tour_img-top_dots {
+        top: -11%;
+        left: -37%; } }
+    @media (max-width: 767px) {
+      .tour__tour_img-top_dots {
+        display: none; } }
 
 .bestDance {
   background: #E8631C;
@@ -858,7 +883,7 @@ p, h1, h2, h3, h4 {
     background-repeat: no-repeat;
     z-index: 2;
     display: none; }
-    @media (max-width: 1339px) {
+    @media (max-width: 1444px) {
       .subscribe__subscribe_img-left {
         left: -10%;
         display: block; } }
@@ -884,7 +909,7 @@ p, h1, h2, h3, h4 {
     background-repeat: no-repeat;
     z-index: 1;
     display: none; }
-    @media (max-width: 1339px) {
+    @media (max-width: 1444px) {
       .subscribe__subscribe_img-right {
         right: -44%;
         display: block; } }
