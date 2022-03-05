@@ -307,12 +307,15 @@ p, h1, h2, h3, h4 {
       background-color: #494848; }
 
 .bestDance {
-  background: #E8631C; }
+  background: #E8631C;
+  position: relative;
+  overflow: hidden; }
   .bestDance__bestDance-container {
     max-width: 1444px;
-    background: #E8631C;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    position: relative;
+    z-index: 2; }
   .bestDance__bestDance-flex {
     display: flex; }
     @media (max-width: 767px) {
@@ -422,6 +425,23 @@ p, h1, h2, h3, h4 {
         padding-top: 10px; } }
     .bestDance__bestDance-btn:hover {
       background-color: #494848; }
+  .bestDance__bestDance_img-left_dots {
+    position: absolute;
+    background-image: url(../../img/best_dance_bg_dots.png);
+    bottom: -45%;
+    left: -6%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 2; }
+    @media (max-width: 970px) {
+      .bestDance__bestDance_img-left_dots {
+        left: -10%;
+        bottom: -40%; } }
+    @media (max-width: 790px) {
+      .bestDance__bestDance_img-left_dots {
+        display: none; } }
 
 .count {
   padding-top: 204px;

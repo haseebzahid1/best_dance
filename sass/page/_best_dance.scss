@@ -1,10 +1,14 @@
 .bestDance{
     background: #E8631C;
+    position: relative;
+    overflow: hidden;
     &__bestDance-container{
         max-width: 1444px;
-        background: #E8631C;
+        // background: #E8631C;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        z-index: 2;
     }
     &__bestDance-flex{
         display: flex;
@@ -134,5 +138,33 @@
          background-color: #494848; 
         }
      }
-
+     &__bestDance_img-left_dots{
+        position: absolute;
+        background-image: url(../../img/best_dance_bg_dots.png);
+        bottom: -45%;
+        left: -6%;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        z-index: 2;
+        
+        @include respond(tab-land-1){
+            // left: -10%;
+           }
+           @include respond(tab-land-6){
+            // left: -15%;
+           }
+           @include respond(tab-land-5){
+            // left: -25%;
+           }
+           @include respond(tab-port){
+            left: -10%;
+            bottom: -40%;
+           }
+           @include respond(phone-1){
+            display: none;
+           }
+          
+    }
 }
