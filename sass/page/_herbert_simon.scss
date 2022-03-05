@@ -55,6 +55,9 @@
         color: #fff;
         font-size: 58px;
         font-family: 'Oswald', sans-serif;
+        @include respond(zero-size){
+            line-height: 70px;
+        }
     }
     
 }

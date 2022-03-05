@@ -1,113 +1,138 @@
-// .bestDance{
-//     background: #E8631C;
-//     &__bestDance-container{
-//         max-width: 1444px;
-//         background: #E8631C;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-//     &__bestDance-flex{
-//         display: flex;
-//         @include respond(tab-port-1){
-//             // flex-wrap: wrap;
-//         }
-//     }
-//     &__bestDance-col-left{
-//         // max-width: 722px ;
-//         width: 50%;
-//         flex:  0 0 50%;
-//         height: 956px;
-//         @include respond(tab-port-1){
-//             height: 756px ;
-//         }
-//         @include respond(phone-2){
-//             height: 656px;
-//          }
-//     }
-//     &__bestDance-img{
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         background-size: cover;
-//         @include respond(tab-port-1){
-//             background-position: center;
-//         }
-//     }
+.bestDance{
+    background: #E8631C;
+    &__bestDance-container{
+        max-width: 1444px;
+        background: #E8631C;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__bestDance-flex{
+        display: flex;
+        @include respond(phone-2){
+            flex-wrap: wrap;
+            
+        }
+    }
+    &__bestDance-col-left{
+        width: 50%;
+        flex:  0 0 50%;
+        height: 956px;
+        order: 1;
+        @include respond(tab-port-1){
+            height: 756px ;
+        }
+        @include respond(phone-2){
+            height: 656px;
+            width: 100%;
+            flex: 0 0 100%;
+            order: 0;
+         }
+         @include respond(phone){
+            height: 556px;
+        }
+        @include respond(zero-size){
+            height: 460px;
+        }
+    }
+    &__bestDance-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+        @include respond(tab-port-1){
+            background-position: center;
+        }
+    }
 
     
-//     &__bestDance-col-right{
-//         // max-width: 722px;
-//         width: 50%;
-//         flex:  0 0 50%;
-//         padding-left: 84px;
-//         padding-top: 318px;
-//         @include respond(tab-land-6){
-//             padding-top: 226px;
-//             padding-left: 40px;
-//         }
-//         @include respond(tab-port-1){
-//            padding-top: 116px;
-//         }
-//         @include respond(phone-2){
-//            padding-top: 80px;
-//            padding-left: 15px;
-//         }
-//     }
+    &__bestDance-col-right{
+        // max-width: 722px;
+        width: 50%;
+        flex:  0 0 50%;
+        padding-left: 84px;
+        padding-top: 318px;
+        @include respond(tab-land-6){
+            padding-top: 226px;
+            padding-left: 40px;
+        }
+        @include respond(tab-port-1){
+           padding-top: 116px;
+        }
+        @include respond(phone-2){
+           padding-top: 80px;
+           padding-left: 15px;
+           padding-right: 15px;
+        }
+        @include respond(phone-2){
+            width: 100%;
+            flex: 0 0 100%;
+            padding-bottom: 3.5rem;
+        }
+        @include respond(zero-size){
+            padding-top: 50px;
+        }
+    }
    
     
-//     &__bestDance-h1{
-//         font-size: 75px;
-//         font-family: 'Oswald', sans-serif;
-//         font-weight: bold;
-//         color: #fff;
-//         line-height: 90px;
-//         @include respond(phone-2){
-//             font-size: 63px;
-//         }
-//     }
-//     &__bestDance-p{
-//         font-size: 29.72px;
-//         line-height: 35.67px;
-//         font-family: 400;
-//         color: #fff;
-//         padding-top: 60px;
-//         padding-bottom: 72px;
-//         max-width: 722px;
-//         // border: 1px solid  blue;
-//         @include respond(tab-port-1){
-//             font-size: 25px;
-//         }
-//         @include respond(phone-2){
-//             padding-top: 40px;
-//             padding-bottom: 50px;
-//             font-size: 22px;
-//          }
-//     }
-//     &__bestDance-btn{
-//         width: 100%;
-//         max-width: 322px;
-//         background-color: #303030; 
-//         color: #fff;
-//         font-size: 29px;
-//         display: block;
-//         padding-bottom: 17px;
-//         padding-top: 17px;
-//         text-align: center;
-//         border-radius: 3px;
-//         transition:  all 0.3s ease;
-//         // margin-right: auto;
-//         // margin-left: auto;
-//         font-family: 'Oswald', sans-serif;
+    &__bestDance-h1{
+        font-size: 75px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        color: #fff;
+        line-height: 90px;
+        @include respond(phone-2){
+            font-size: 63px;
+        }
+        @include respond(zero-size){
+            line-height: 78px;
+        }
+    }
+    &__bestDance-p{
+        font-size: 29.72px;
+        line-height: 35.67px;
+        font-family: 400;
+        color: #fff;
+        padding-top: 60px;
+        padding-bottom: 72px;
+        max-width: 722px;
+        // border: 1px solid  blue;
+        @include respond(tab-port-1){
+            font-size: 25px;
+        }
+        @include respond(phone-2){
+            padding-top: 40px;
+            padding-bottom: 50px;
+            font-size: 22px;
+         }
+         @include respond(zero-size){
+            padding-top: 24px;
+        }
+    }
+    &__bestDance-btn{
+        width: 100%;
+        max-width: 322px;
+        background-color: #303030; 
+        color: #fff;
+        font-size: 29px;
+        display: block;
+        padding-bottom: 17px;
+        padding-top: 17px;
+        text-align: center;
+        border-radius: 3px;
+        transition:  all 0.3s ease;
+        // margin-right: auto;
+        // margin-left: auto;
+        font-family: 'Oswald', sans-serif;
         
-//         @include respond(phone-2){
-//          font-size: 21px;
-//          padding-bottom: 10px;
-//          padding-top: 10px;
-//      }
+        @include respond(phone-2){
+         font-size: 21px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+     }
      
-//         &:hover{
-//          background-color: #494848; 
-//         }
-//      }
+        &:hover{
+         background-color: #494848; 
+        }
+     }
 
-// }
+}
