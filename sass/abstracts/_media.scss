@@ -55,9 +55,9 @@ p,h1,h2,h3,h4{
     @if $breakpoint == phone-1{
         @media (max-width: 790px) {@content}; //640px
      }
-    @if $breakpoint == phone-1-min{
-        @media (min-width: 790px) {@content}; //640px
-     }
+    // @if $breakpoint == phone-1-min{
+    //     @media (min-width: 790px) {@content}; //640px
+    //  }
      @if $breakpoint == phone-3{
         @media (max-width: 390px) {@content}; //640px
      }
@@ -86,7 +86,7 @@ p,h1,h2,h3,h4{
        @media (max-width: 1339px) {@content}; //
    }
    @if $breakpoint == tab-land-2{
-    @media (max-width: 1650px) {@content}; //
+    @media (max-width: 1444px) {@content}; //
 }
    @if $breakpoint == big-desktop{
        @media (min-width: 112.5em) {@content}; //1800px

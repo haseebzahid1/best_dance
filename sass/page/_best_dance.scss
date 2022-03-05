@@ -148,12 +148,13 @@
         width: 100%;
         background-repeat: no-repeat;
         z-index: 2;
-        
+        display: none;
         @include respond(tab-land-1){
             // left: -10%;
+            display: block;
            }
-           @include respond(tab-land-6){
-            // left: -15%;
+           @include respond(tab-land-2){
+            display: block;
            }
            @include respond(tab-land-5){
             // left: -25%;
@@ -162,7 +163,7 @@
             left: -10%;
             bottom: -40%;
            }
-           @include respond(phone-1){
+           @include respond(phone-2){
             display: none;
            }
           

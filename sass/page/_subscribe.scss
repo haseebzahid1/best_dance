@@ -129,8 +129,10 @@
         width: 100%;
         background-repeat: no-repeat;
         z-index: 2;
+        display: none;
         @include respond(tab-land-1){
             left: -10%;
+            display: block;
            }
            @include respond(tab-land-6){
             left: -15%;
@@ -156,9 +158,10 @@
         background-repeat: no-repeat;
         z-index: 1;
         // opacity: 9;
-       
+       display: none;
        @include respond(tab-land-1){
         right: -44%;
+        display: block;
        }
        @include respond(tab-land-6){
         right: -39%;
