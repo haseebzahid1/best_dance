@@ -1,31 +1,9 @@
 .subscribe{
     background-color: #E8631C;
     position: relative;
+    overflow: hidden;
     width: 100%;
-    // padding-bottom: 46px;
-    // &__subscribe-background-img{
-    //     width: 100%;
-    //     max-width: 1301px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    //     background-position: center;
-    //     background-size:cover;
-    //     background-image: url(../../img/subscribe-bg.png);
-    //     background-repeat: no-repeat;
-    //     min-height: 891px;
-    //     @include respond(tab-port){
-    //         background-position: 20% 0%;
-    //     }
-    //     @include respond(phone-2){
-    //         background-position: 30% 0%;
-    //     }
-    //     @include respond(zero-size){
-    //         background-position: center;
-    //     }
-    //     @include respond(phone){
-    //         min-height: 626px;
-    //     }
-    // }
+ 
     &__subscribe-container{
         padding: 129px 15px 161px 15px;
         width: 100%;
@@ -33,8 +11,9 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
-        z-index: 44;
         position: relative;
+        
+        z-index: 44;
         // border: 1px solid red;
         @include respond(phone){
             padding-top: 70px;
@@ -117,18 +96,25 @@
         }
         
     }
-    &__subscribe_img-left{
+    &__subscribe_img-left,
+    &__subscribe_img-right{
         position: absolute;
-        background-image: url(../../img/Subscribe_left.png);
-        top: -2%;
-        left: -6%;
-        // left: 0;
         object-fit: cover;
-        height: 590px;
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
-        z-index: 2;
+        z-index: 1;
+     
+      
+           @include respond(phone-2){
+            display: none;
+           }
+    }
+
+    &__subscribe_img-left{
+        background-image: url(../../img/Subscribe_left.png);
+        top: -2%;
+        left: -6%;
         display: none;
         @include respond(tab-land-2){
             left: -10%;
@@ -138,43 +124,38 @@
             left: -15%;
            }
            @include respond(tab-land-5){
+               top: 2%;
             left: -25%;
            }
            @include respond(tab-port){
             left: -30%;
            }
-           @include respond(phone-1){
+           @include respond(phone-2){
             display: none;
-           }
+        }
     }
     &__subscribe_img-right{
-        position: absolute;
         background-image: url(../../img/Subscribe_right.png);
         top: -4%;
         right: -50%;
-        // object-fit: cover;
-        height: 590px;
-        width: 100%;
-        background-repeat: no-repeat;
-        z-index: 1;
-        // opacity: 9;
-       display: none;
+        display: none;
        @include respond(tab-land-2){
         right: -44%;
+        top: -2%;
         display: block;
        }
        @include respond(tab-land-6){
         right: -39%;
        }
        @include respond(tab-land-5){
-        right: -36%;
+        right: -30%;
        }
-       @include respond(phone-1){
-        display: none;
+       @include respond(phone-2){
+           display: none;
        }
     }
-    position: relative;
-    overflow: hidden;
+
+   
 }
 .bg-color{
     width: 100%;

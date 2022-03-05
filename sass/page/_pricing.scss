@@ -1,10 +1,13 @@
 .price{
     background-color:#303030;
-    
+    position: relative;
+    overflow: hidden;
     &__main-container{
         width: 100%;
         min-height:964px;
         padding-bottom: 100px;
+        position: relative;
+        z-index: 2;
         @include respond(zero-size){
             padding-bottom: 64px;
         }
@@ -150,5 +153,33 @@
        &:hover{
         background-color: #494848; 
        }
+    }
+    &__price_img-top_dots,
+    &__price_img-bottom_dots{
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        z-index: 1;
+        display: none;
+        @include respond(tab-land-2){
+            display: block;
+           }
+           @include respond(phone-2){
+            display: none;
+           }
+    }
+    &__price_img-top_dots{
+        background-image: url(../../img/pricing_top_bg_dots.png);
+        top: -0%;
+        left: -12%;
+    }
+    
+    &__price_img-bottom_dots{
+        background-image: url(../../img/pricing_bottom_bg_dots.png);
+        bottom: -20%;
+        right: -50%;
+      
     }
 }
