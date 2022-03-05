@@ -699,14 +699,20 @@ p, h1, h2, h3, h4 {
       background-color: #494848; }
 
 .subscribe {
-  background-color: #E8631C; }
+  background-color: #E8631C;
+  position: relative;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
   .subscribe__subscribe-container {
     padding: 129px 15px 161px 15px;
     width: 100%;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center; }
+    text-align: center;
+    z-index: 44;
+    position: relative; }
     @media (max-width: 640px) {
       .subscribe__subscribe-container {
         padding-top: 70px;
@@ -778,6 +784,58 @@ p, h1, h2, h3, h4 {
     @media (max-width: 640px) {
       .subscribe__search-button {
         max-width: 150px; } }
+  .subscribe__subscribe_img-left {
+    position: absolute;
+    background-image: url(../../img/Subscribe_left.png);
+    top: -2%;
+    left: -6%;
+    object-fit: cover;
+    height: 590px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 2; }
+    @media (max-width: 1339px) {
+      .subscribe__subscribe_img-left {
+        left: -10%; } }
+    @media (max-width: 1239px) {
+      .subscribe__subscribe_img-left {
+        left: -15%; } }
+    @media (max-width: 1070px) {
+      .subscribe__subscribe_img-left {
+        left: -25%; } }
+    @media (max-width: 970px) {
+      .subscribe__subscribe_img-left {
+        left: -30%; } }
+    @media (max-width: 790px) {
+      .subscribe__subscribe_img-left {
+        display: none; } }
+  .subscribe__subscribe_img-right {
+    position: absolute;
+    background-image: url(../../img/Subscribe_right.png);
+    top: -4%;
+    right: -50%;
+    height: 590px;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 1; }
+    @media (max-width: 1339px) {
+      .subscribe__subscribe_img-right {
+        right: -44%; } }
+    @media (max-width: 1239px) {
+      .subscribe__subscribe_img-right {
+        right: -39%; } }
+    @media (max-width: 1070px) {
+      .subscribe__subscribe_img-right {
+        right: -36%; } }
+    @media (max-width: 790px) {
+      .subscribe__subscribe_img-right {
+        display: none; } }
+
+.bg-color {
+  width: 100%;
+  background-color: pink;
+  height: 200px; }
 
 .footer {
   padding-top: 128px;
