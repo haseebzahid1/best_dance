@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -967,6 +968,115 @@ p, h1, h2, h3, h4 {
   background-color: pink;
   height: 200px; }
 
+.navbar.sticky .navbar-flex {
+  height: 80px; }
+
+.navbar.sticky .navbar-logo {
+  height: 60px; }
+  .navbar.sticky .navbar-logo svg {
+    height: 100%; }
+
+.navbar.sticky .navbar-searchBox svg {
+  width: 25px;
+  height: 25px; }
+
+.navbar {
+  z-index: 999;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3d3d3d; }
+  .navbar__navbar-container {
+    padding-left: 77px;
+    padding-right: 55px;
+    max-width: 1444px;
+    margin-left: auto;
+    margin-right: auto; }
+  .navbar__navbar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 102px; }
+  .navbar__navbar-logo {
+    width: 127px;
+    height: 67px; }
+    .navbar__navbar-logo svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      fill: #fff; }
+  .navbar__navbar-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 570px; }
+    @media (max-width: 967px) {
+      .navbar__navbar-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: block;
+        max-width: 320px;
+        height: 100vh;
+        background-color: #3d3d3d;
+        padding-top: 70px;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: all 0.3s ease; } }
+  @media (max-width: 967px) {
+    .navbar__navbar-li:not(:first-child) {
+      margin-top: 1rem;
+      margin-bottom: 1rem; } }
+  .navbar__navbar-a {
+    display: block;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: 400; }
+    .navbar__navbar-a:hover {
+      transition: all 0.3s ease-in-out;
+      color: #dfdfdf; }
+    @media (max-width: 967px) {
+      .navbar__navbar-a {
+        border-bottom: 1px solid #dfdfdf;
+        display: block;
+        padding-top: 1rem;
+        padding-bottom: 1rem; } }
+  .navbar__navbar-searchBox {
+    padding-left: 1rem; }
+    .navbar__navbar-searchBox svg {
+      display: block;
+      font-family: 'Oswald', sans-serif;
+      fill: #fff;
+      font-size: 30px;
+      height: 30px;
+      width: 30px; }
+  .navbar__navbar-input {
+    display: none; }
+  .navbar__btnn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; }
+    @media (max-width: 967px) {
+      .navbar__btnn {
+        display: block; } }
+  .navbar__cancel-btn {
+    position: absolute;
+    top: 2rem;
+    right: 39px;
+    color: #fff;
+    transition: all 0.3s ease-in-out; }
+    .navbar__cancel-btn:hover:hover {
+      color: #b6b6b6; }
+
+#menu-btn:checked ~ .navbar-list {
+  left: 0; }
+
 .footer {
   padding-top: 128px;
   padding-bottom: 92px;
@@ -1180,7 +1290,7 @@ p, h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400; }
   .header__header-btn:hover {
-    background-color: #fd3d2cec; }
+    background-color: #f64c3cd3; }
   @media (max-width: 767px) {
     .header__header-btn {
       font-size: 22px;
