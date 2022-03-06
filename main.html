@@ -12,6 +12,7 @@
     <title>Best Dance</title>
 </head>
 <body data-spy="scroll" data-target="#main-nav" id="home" >
+    <div id="backToTop"></div>
     <nav class="navbar" id="main-nav" >
         <div class="navbar__navbar-container">
             <div class="navbar__navbar-flex navbar-flex">
@@ -350,7 +351,7 @@
                              <a href="#" class="footer__footer-a">Help</a>
                          </li>
                          <li class="footer__footer-li">
-                             <a href="#" class="footer__footer-a">Privacy</a>
+                             <a href="#home" class="footer__footer-a">Privacy</a>
                          </li>
                      </ul>
                     </div>
@@ -358,31 +359,28 @@
             </div>
         </div>
     </footer>
+    <div class="back-to-top">
+        <a href="#backToTop"><i class="fa fa-chevron-up"></i></a>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-   <!-- counter -->
-   <script>
-     $(window).scroll(function () {
-    if ($(this).scrollTop() >= 500) {
-        $(".back-to-top").fadeIn(200);
-    } else {
-        $(".back-to-top").fadeOut(200);
-    } 
- })
- </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+ 
+   <script src="./js/main.js"></script>
+  
    <script>
    
-     // Init Scrollspy
+
      $('body').scrollspy({
          target: '#main-nav'
      });
  
-     // Smooth Scrolling
+ 
      $("#main-nav a").on('click', function(event) {
          if (this.hash !== "") {
              event.preventDefault();
@@ -414,8 +412,7 @@
      })
  </script> 
 
-
-
-
+  
+</script>
 </body>
 </html>

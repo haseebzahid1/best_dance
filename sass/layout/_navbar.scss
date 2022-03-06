@@ -146,3 +146,22 @@
 #menu-btn:checked ~ .navbar-list{
     left:0;
  }
+
+
+
+ .back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+ }
+ .back-to-top a{
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    color: #9F5BA4 !important;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50px;
+ }
